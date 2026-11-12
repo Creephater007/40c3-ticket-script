@@ -97,9 +97,14 @@ def main():
 
         print("Browser is ready. Automation finished.")
 
-        input("Press Enter to close the browser...")
-
-        #browser.close()
+        try:
+            if sys.stdin is not None and hasattr(sys.stdin, "isatty") and sys.stdin.isatty():
+                input("Press Enter to close the browser...")
+        except EOFError:
+            pass
+        finally:
+            #browser.close()
+            print("Browser closed.")
 
 
 if __name__ == "__main__":
