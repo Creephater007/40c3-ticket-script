@@ -99,7 +99,7 @@ def main():
 
         input("Press Enter to close the browser...")
 
-        browser.close()
+        #browser.close()
 
 
 if __name__ == "__main__":
