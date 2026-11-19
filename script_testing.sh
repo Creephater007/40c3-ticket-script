@@ -10,11 +10,6 @@ if [ $? -ne 0 ]; then
     exit 1;
 fi
 python -m playwright install chromium;
-if [ $? -ne 0 ]; then
-    echo "Could not install chronium using playwright package";
-    echo "Exiting with flag 1 ...";
-    exit 1;
-fi
 
 echo "\n\nDependencies collected. Starting script ...";
 
