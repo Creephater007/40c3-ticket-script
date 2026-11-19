@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 import time
 from datetime import datetime, timedelta
 
-TARGET_TIME = datetime.now() + timedelta(seconds=10)  # Set the target time to 10 seconds from now
+TARGET_TIME = datetime.now() + timedelta(seconds=30)  # Set the target time to 30 seconds from now
 print(f"Waiting until {TARGET_TIME} to open the ticket shop...")
 
 def main():
